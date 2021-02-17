@@ -29,7 +29,7 @@ const reducer = (state = initialState, action) => {
             ...state,
             car: {...state.car, features: state.car.features.filter(feature => feature !== action.payload)},
             additionalPrice: state.additionalPrice - action.payload.price
-          }
+          };
         default: return state;
     };
 };
